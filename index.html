@@ -36,6 +36,16 @@
             </div>
         </div>
     </div>
+
+    <script>
+        async function setElementStyles(el, styles) {
+            for (const [key, value] of Object.entries(styles)) {
+                el.style[key] = value;
+            }
+        }
+        const newSrc = $0.src + '?v=' + Date.now();
+        await setElementStyles($0, { src: newSrc });
+    </script>
 </body>
 
 </html>
